@@ -1,0 +1,51 @@
+*{
+ box-sizing: border-box; 
+}
+
+.App {
+  text-align: center;
+  max-width:400px;
+  border:1px solid black;
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border:1px solid black;
+}
+
+
+.key{
+  box-sizing: border-box;
+  border:1px solid black;
+  font-size: 20px;
+  padding: 25px;
+  cursor: pointer;
+  background-color:gray
+}
+
+#display{
+  height: 5vh;
+  border:1px solid black;
+  background-color: rgb(107, 61, 61);
+}
+
+#clear{
+  grid-column-start:1;
+  grid-column-end:3;
+  background-color: rgb(131, 10, 10);
+}
+
+
+#equals{
+  grid-row-start:4;
+  grid-row-end:6;
+  grid-column-start:4;
+  grid-column-end:5;
+  background-color: rgb(23, 23, 95);
+}
+
+#decimal{
+  grid-column-start:2;
+  grid-column-end:4;
+}
